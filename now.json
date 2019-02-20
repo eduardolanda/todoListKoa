@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "wmdd-get-w5",
+  "env": {
+    "DBHOST": "",
+    "DBPORT": "3306",
+    "DBUSER": "test",
+    "DBPASSWORD": "password",
+    "DBNAME": "todo"
+  },
+  "builds": [{ "src": "api/*/index.js", "use": "@now/node" }],
+  "routes": [
+    { "src": "/api/*", "dest": "/api/$1" },
+    { "src": "/api/get", "methods": ["GET"], "dest": "/api/get/index.js"}
+  ]
+}
