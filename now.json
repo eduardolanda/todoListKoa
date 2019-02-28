@@ -2,7 +2,7 @@
   "version": 2,
   "name": "todoList",
   "env": {
-    "DBHOST": "test.ckpaeyr1zhv5.us-east-1.rds.amazonaws.com",
+    "DBHOST": "HOST",
     "DBPORT": "3306",
     "DBUSER": "test",
     "DBPASSWORD": "password",
