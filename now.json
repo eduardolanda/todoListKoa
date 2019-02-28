@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "name": "wmdd-get-w5",
+  "name": "todoList",
   "env": {
-    "DBHOST": "",
+    "DBHOST": "test.ckpaeyr1zhv5.us-east-1.rds.amazonaws.com",
     "DBPORT": "3306",
     "DBUSER": "test",
     "DBPASSWORD": "password",
@@ -10,7 +10,6 @@
   },
   "builds": [{ "src": "api/*/index.js", "use": "@now/node" }],
   "routes": [
-    { "src": "/api/*", "dest": "/api/$1" },
-    { "src": "/api/get", "methods": ["GET"], "dest": "/api/get/index.js"}
+    { "src": "/", "methods": ["GET"], "dest": "/api/get"}
   ]
 }
